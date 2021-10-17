@@ -1,0 +1,42 @@
+
+h1{
+
+    font-size:50px;
+
+    font-style:italic;
+    background-color: rgb(230, 142, 11);
+
+   text-align: center;
+}
+
+a{
+    color: ivory;
+  
+}
+  
+  li {
+    display: flex;
+    flex: 20px;
+    flex-direction:column-reverse;
+    align-items: center;
+    color: rgb(15, 15, 15);
+    /* text-align: center; */
+    padding: 14px 16px;
+    /* width: 100%; */
+    font-size: 15px;
+   background-color: #b5c0bc;
+  }
+
+  
+  button:hover {
+    opacity: 0.7;
+    font-size: 20px;
+    background-color: rgb(255, 106, 6);
+  }
+  img{
+    border: rgb(223, 35, 35) solid 1px; 
+    justify-self: center;
+
+  }
+  
+  
