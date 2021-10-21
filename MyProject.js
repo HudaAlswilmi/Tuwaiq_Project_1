@@ -5,7 +5,7 @@ const imginput =$("#imgLink");
 // const add =$("div1");
 
 
-var ResturantArr=[{descreption:"باستا باللحم مع الصوص الخاص ", img: src="./pexels-photo-5807019.jpeg"},
+let ResturantArr=[{descreption:"باستا باللحم مع الصوص الخاص ", img: src="./pexels-photo-5807019.jpeg"},
 {descreption:"باستا مع صوص البيستو و المكسرات", img:"./pexels-photo-3590401.jpeg"} ,
 {descreption:"باستا بالصوص الاحمر وجبنة البرميزان ", img:"./pexels-photo-5419336.jpeg"}, 
 {descreption:"نودلز بالخضار ", img:"./pexels-photo-1279330.jpeg"} 
@@ -27,7 +27,7 @@ function randerArr(array){
 }
 randerArr(ResturantArr);
 
- function add(){
+ function add(){ //وظيفة الاضافة 
   const newMnu={
     descreption: descreptioninput.val(),
     img: imginput.val(),
@@ -37,7 +37,7 @@ randerArr([newMnu]);}
    
 
 
-function del(){
+function del(){  //ظيفة الحذف
   ResturantArr = ResturantArr.filter(function(item){
     return item.descreption != descreptioninput.val();
 });
@@ -48,40 +48,4 @@ randerArr(ResturantArr);
 
 
 
-localStorage.setItem("key", "value");
-// $('mnuResturant').remove(div);
-
-// function hideHandler(){
-//   mnuResturant.hide();
-//  }
-
-
-
- 
-
-//  function showhandler(){
-//   div1.show()
-//  }
-
-
-
-// LoadProduct(div1);
-// alert("تم اضافة المنتج ")
-// mnuResturant();
-// $('#imgLink').val(" ");
-// $('#descreption').val(" ");
-
-// function LoadProduct(mnuResturant)
-// {
-//     $('#mnuResturant').empty();
-//     mnuResturant.forEach(function(value,index){
-//         $('#mnuResturant').append('<div class="col-md-4"><div class="card" style="width: 18rem;">\
-//         <img src="'+value.imgLink+'" class="card-img-top" alt="..."><div class="card-body text-center">\
-//          <p class="card-text">'+value.descreption+'</p>\
-//          </div></div></div>');
-//     });
-//     $(document).ready(function(){
-//         $("#switchField1").click(function() {
-//             $("#field1").toggle(50);
-//         });
-//     });
+// localStorage.setItem("key", "value");
